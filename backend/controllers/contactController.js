@@ -1,6 +1,6 @@
 const sendGmail = require("../utils/sendGmail");
 const config = require("../config/config");
-const Contact = require("../models/contact");
+const Contact = require("../models/Contact");
 const { contactContent } = require("../templates");
 
 // this controller is responsible for handling contact form submissions
