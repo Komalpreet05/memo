@@ -1,6 +1,6 @@
 import axios from "axios";
 const request = axios.create({
-  baseURL: "http://localhost:8888/api/",
+  baseURL: "https://memo-backend-eunv.onrender.com",
   timeout: 5000,
   headers: {
     "Content-Type": "application/json",
@@ -35,7 +35,7 @@ request.interceptors.response.use(
           break;
         case 404:
           console.error("Not Found: ", response.data.message);
-          
+
           break;
         case 409:
           console.error("Conflict: ", response.data.message);
