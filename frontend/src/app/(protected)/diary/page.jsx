@@ -18,7 +18,11 @@ export default function dashboard() {
   const [weatherData, setWeatherData] = useState({});
   const dispatch = useDispatch();
   const searchParams = useSearchParams();
-  const auth = sessionStorage.getItem("authState");
+  let auth;
+  useEffect(() => {
+    auth = sessionStorage.getItem("authState");
+  });
+
   const userId = JSON.parse(auth).user.id || null;
 
   // get Diary data from database
