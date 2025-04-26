@@ -1,6 +1,6 @@
 const { google } = require("googleapis");
 const config = require("../config/config");
-const Token = require("../models/token");
+const Token = require("../models/Token");
 
 // GoogleAuthService class
 class GoogleAuthService {

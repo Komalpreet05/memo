@@ -2,7 +2,7 @@ const User = require("../models/User");
 const crypto = require("crypto");
 const sendGmail = require("../utils/sendGmail");
 const GoogleAuthService = require("../utils/googleAuthService");
-const Token = require("../models/token");
+const Token = require("../models/Token");
 const googleAuthService = new GoogleAuthService();
 const { resetPasswordTemplate } = require("../templates");
 // authController.js
